@@ -1,3 +1,5 @@
+package excutor;
+
 import bean.Activity;
 import bean.Rule;
 import com.google.gson.Gson;
@@ -29,7 +31,7 @@ public class PP {
 ////
 ////        walker.walk(new ActivityProcessor(), tree);
 //
-//        Visitor activityVisitor = new Visitor();
+//        excutor.Visitor activityVisitor = new excutor.Visitor();
 //        activityVisitor.visit(tree);
 //
 //        String content = activityVisitor.getContent();
