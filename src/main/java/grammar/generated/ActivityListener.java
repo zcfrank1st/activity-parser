@@ -1,5 +1,6 @@
-// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5.1
+// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5
 package grammar.generated;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -11,100 +12,100 @@ public interface ActivityListener extends ParseTreeListener {
 	 * Enter a parse tree produced by {@link ActivityParser#main}.
 	 * @param ctx the parse tree
 	 */
-	void enterMain(ActivityParser.MainContext ctx);
+	void enterMain(@NotNull ActivityParser.MainContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#main}.
 	 * @param ctx the parse tree
 	 */
-	void exitMain(ActivityParser.MainContext ctx);
+	void exitMain(@NotNull ActivityParser.MainContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void enterType(ActivityParser.TypeContext ctx);
+	void enterType(@NotNull ActivityParser.TypeContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#type}.
 	 * @param ctx the parse tree
 	 */
-	void exitType(ActivityParser.TypeContext ctx);
+	void exitType(@NotNull ActivityParser.TypeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#expr_list}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr_list(ActivityParser.Expr_listContext ctx);
+	void enterExpr_list(@NotNull ActivityParser.Expr_listContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#expr_list}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr_list(ActivityParser.Expr_listContext ctx);
+	void exitExpr_list(@NotNull ActivityParser.Expr_listContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr(ActivityParser.ExprContext ctx);
+	void enterExpr(@NotNull ActivityParser.ExprContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr(ActivityParser.ExprContext ctx);
+	void exitExpr(@NotNull ActivityParser.ExprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#label}.
 	 * @param ctx the parse tree
 	 */
-	void enterLabel(ActivityParser.LabelContext ctx);
+	void enterLabel(@NotNull ActivityParser.LabelContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#label}.
 	 * @param ctx the parse tree
 	 */
-	void exitLabel(ActivityParser.LabelContext ctx);
+	void exitLabel(@NotNull ActivityParser.LabelContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#opt}.
 	 * @param ctx the parse tree
 	 */
-	void enterOpt(ActivityParser.OptContext ctx);
+	void enterOpt(@NotNull ActivityParser.OptContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#opt}.
 	 * @param ctx the parse tree
 	 */
-	void exitOpt(ActivityParser.OptContext ctx);
+	void exitOpt(@NotNull ActivityParser.OptContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#threshold}.
 	 * @param ctx the parse tree
 	 */
-	void enterThreshold(ActivityParser.ThresholdContext ctx);
+	void enterThreshold(@NotNull ActivityParser.ThresholdContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#threshold}.
 	 * @param ctx the parse tree
 	 */
-	void exitThreshold(ActivityParser.ThresholdContext ctx);
+	void exitThreshold(@NotNull ActivityParser.ThresholdContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#result}.
 	 * @param ctx the parse tree
 	 */
-	void enterResult(ActivityParser.ResultContext ctx);
+	void enterResult(@NotNull ActivityParser.ResultContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#result}.
 	 * @param ctx the parse tree
 	 */
-	void exitResult(ActivityParser.ResultContext ctx);
+	void exitResult(@NotNull ActivityParser.ResultContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#side}.
 	 * @param ctx the parse tree
 	 */
-	void enterSide(ActivityParser.SideContext ctx);
+	void enterSide(@NotNull ActivityParser.SideContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#side}.
 	 * @param ctx the parse tree
 	 */
-	void exitSide(ActivityParser.SideContext ctx);
+	void exitSide(@NotNull ActivityParser.SideContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ActivityParser#effect}.
 	 * @param ctx the parse tree
 	 */
-	void enterEffect(ActivityParser.EffectContext ctx);
+	void enterEffect(@NotNull ActivityParser.EffectContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link ActivityParser#effect}.
 	 * @param ctx the parse tree
 	 */
-	void exitEffect(ActivityParser.EffectContext ctx);
+	void exitEffect(@NotNull ActivityParser.EffectContext ctx);
 }

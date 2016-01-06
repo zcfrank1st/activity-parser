@@ -7,6 +7,6 @@ import grammar.generated.ActivityParser;
 public class Activity extends ActivityBaseListener {
     @Override
     public void enterMain(ActivityParser.MainContext ctx) {
-        System.out.println(ctx.getText());
+        System.out.println(ctx.getChild(2).getChild(0).getChild(4).getChild(1).getText());
     }
 }

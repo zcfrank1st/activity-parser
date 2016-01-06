@@ -1,4 +1,4 @@
-// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5.1
+// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5
 package grammar.generated;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class ActivityParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.5.1", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -66,7 +66,7 @@ public class ActivityParser extends Parser {
 	}
 
 	@Override
-
+	@NotNull
 	public Vocabulary getVocabulary() {
 		return VOCABULARY;
 	}
@@ -119,13 +119,13 @@ public class ActivityParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(20);
+			setState(20); 
 			type();
-			setState(21);
+			setState(21); 
 			match(T__0);
-			setState(22);
+			setState(22); 
 			expr_list();
-			setState(23);
+			setState(23); 
 			match(T__1);
 			}
 		}
@@ -173,9 +173,8 @@ public class ActivityParser extends Parser {
 			_la = _input.LA(1);
 			if ( !(_la==AND || _la==OR) ) {
 			_errHandler.recoverInline(this);
-			} else {
-				consume();
 			}
+			consume();
 			}
 		}
 		catch (RecognitionException re) {
@@ -228,13 +227,13 @@ public class ActivityParser extends Parser {
 			while (_la==QUANTITY || _la==TOTAL_PRICE) {
 				{
 				{
-				setState(27);
+				setState(27); 
 				expr();
 				setState(29);
 				_la = _input.LA(1);
 				if (_la==T__2) {
 					{
-					setState(28);
+					setState(28); 
 					match(T__2);
 					}
 				}
@@ -297,19 +296,19 @@ public class ActivityParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(36);
+			setState(36); 
 			label();
-			setState(37);
+			setState(37); 
 			opt();
-			setState(38);
+			setState(38); 
 			threshold();
 			setState(41);
 			_la = _input.LA(1);
 			if (_la==T__3) {
 				{
-				setState(39);
+				setState(39); 
 				match(T__3);
-				setState(40);
+				setState(40); 
 				result();
 				}
 			}
@@ -360,9 +359,8 @@ public class ActivityParser extends Parser {
 			_la = _input.LA(1);
 			if ( !(_la==QUANTITY || _la==TOTAL_PRICE) ) {
 			_errHandler.recoverInline(this);
-			} else {
-				consume();
 			}
+			consume();
 			}
 		}
 		catch (RecognitionException re) {
@@ -409,9 +407,8 @@ public class ActivityParser extends Parser {
 			_la = _input.LA(1);
 			if ( !(_la==EQ || _la==GE) ) {
 			_errHandler.recoverInline(this);
-			} else {
-				consume();
 			}
+			consume();
 			}
 		}
 		catch (RecognitionException re) {
@@ -452,7 +449,7 @@ public class ActivityParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(47);
+			setState(47); 
 			match(INT);
 			}
 		}
@@ -500,13 +497,13 @@ public class ActivityParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(49);
+			setState(49); 
 			side();
 			setState(51);
 			_la = _input.LA(1);
 			if (_la==MINUS_VALUE || _la==INT) {
 				{
-				setState(50);
+				setState(50); 
 				effect();
 				}
 			}
@@ -559,9 +556,8 @@ public class ActivityParser extends Parser {
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << TOTAL_PRICE) | (1L << ITEM) | (1L << SINGLE_PRICE) | (1L << EXPRESS))) != 0)) ) {
 			_errHandler.recoverInline(this);
-			} else {
-				consume();
 			}
+			consume();
 			}
 		}
 		catch (RecognitionException re) {
@@ -610,7 +606,7 @@ public class ActivityParser extends Parser {
 			case INT:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(55);
+				setState(55); 
 				match(INT);
 				setState(60);
 				_errHandler.sync(this);
@@ -618,9 +614,9 @@ public class ActivityParser extends Parser {
 				while (_la==T__4) {
 					{
 					{
-					setState(56);
+					setState(56); 
 					match(T__4);
-					setState(57);
+					setState(57); 
 					match(INT);
 					}
 					}
@@ -633,7 +629,7 @@ public class ActivityParser extends Parser {
 			case MINUS_VALUE:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(63);
+				setState(63); 
 				match(MINUS_VALUE);
 				}
 				break;

@@ -10,7 +10,7 @@ import org.antlr.v4.runtime.tree.ParseTreeWalker;
  */
 public class Parser {
     public static void main(String[] args) {
-        String list = "AND { QUANTITY >= 5 -> ITEM 1,2,3; QUANTITY >= 10 -> ITEM 1;}";
+        String list = "AND { QUANTITY >= 5 -> TOTAL_PRICE -10; QUANTITY >= 10 -> TOTAL_PRICE -10;}";
 
         ActivityLexer lexer = new ActivityLexer(new ANTLRInputStream(list));
 
