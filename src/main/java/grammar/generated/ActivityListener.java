@@ -48,6 +48,16 @@ public interface ActivityListener extends ParseTreeListener {
 	 */
 	void exitExpr(ActivityParser.ExprContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link ActivityParser#name}.
+	 * @param ctx the parse tree
+	 */
+	void enterName(ActivityParser.NameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ActivityParser#name}.
+	 * @param ctx the parse tree
+	 */
+	void exitName(ActivityParser.NameContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link ActivityParser#label}.
 	 * @param ctx the parse tree
 	 */

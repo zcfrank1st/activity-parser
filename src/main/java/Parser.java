@@ -20,7 +20,7 @@ import java.util.Spliterators;
  */
 public class Parser {
     public static void main(String[] args) {
-        String list = "AND { QUANTITY >= 5 -> TOTAL_PRICE -10 QUANTITY >= 10 -> TOTAL_PRICE -10 TOTAL_PRICE >= 10000 -> ITEM 1,2,4}";
+        String list = "AND { 满五减十 @ QUANTITY >= 5 -> TOTAL_PRICE -10 满五减十 @ QUANTITY >= 10 -> TOTAL_PRICE -10 满五减十 @ TOTAL_PRICE >= 10000 -> ITEM 1,2,4}";
 
         ActivityLexer lexer = new ActivityLexer(new ANTLRInputStream(list));
 
@@ -38,8 +38,7 @@ public class Parser {
         activityVisitor.visit(tree);
 
         String content = activityVisitor.getContent();
-
-        String[] parts = content.split("\\|");
+        String[] parts = content.split("@");
 
         List<Rule> rules = new ArrayList<>();
         Activity activity = new Activity();
@@ -47,13 +46,14 @@ public class Parser {
 
         activity.setType(type);
 
-        for (int i=0; i< (parts.length - 1) / 5; i++) {
+        for (int i=0; i< (parts.length - 1) / 6; i++) {
             Rule rule = new Rule();
-            rule.setLabel(parts[i * 5 + 1]);
-            rule.setOpt(parts[i * 5 + 2]);
-            rule.setThreshold(parts[i * 5 + 3]);
-            rule.setSide(parts[i * 5 + 4]);
-            rule.setEffect(parts[i * 5 + 5]);
+            rule.setName(parts[i * 6 + 1]);
+            rule.setLabel(parts[i * 6 + 2]);
+            rule.setOpt(parts[i * 6 + 3]);
+            rule.setThreshold(parts[i * 6 + 4]);
+            rule.setSide(parts[i * 6 + 5]);
+            rule.setEffect(parts[i * 6 + 6]);
             rules.add(rule);
         }
 

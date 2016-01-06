@@ -6,11 +6,16 @@ import grammar.generated.ActivityParser;
  */
 public class ActivityVisitor extends ActivityBaseVisitor {
     private String content = "";
-
     @Override
     public Object visitType(ActivityParser.TypeContext ctx) {
         combiner(ctx.getText());
         return super.visitChildren(ctx);
+    }
+
+    @Override
+    public Object visitName(ActivityParser.NameContext ctx) {
+        combiner(ctx.getText());
+        return super.visitName(ctx);
     }
 
     @Override
@@ -44,7 +49,7 @@ public class ActivityVisitor extends ActivityBaseVisitor {
     }
 
     private String combiner(String s) {
-        return content += s + "|";
+        return content += s + "@";
     }
 
     public String getContent() {

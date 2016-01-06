@@ -17,7 +17,11 @@ expr_list
     ;
 
 expr
-    : label opt threshold ('->' result)?
+    : name '@' label opt threshold ('->' result)?
+    ;
+
+name
+    : LITERALS
     ;
 
 label
@@ -68,5 +72,6 @@ GE            : '>=';
 
 MINUS_VALUE   : '-'[0-9]+;
 
+LITERALS      : ('\u0080'..'\ufffe')+;
 INT           : [0-9]+;
 WS            : [' '\r\t\n]+ -> skip;
