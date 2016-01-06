@@ -2,11 +2,12 @@ grammar Activity;
 // grammar
 
 main
-    : type '{' expr_list '}'
+    : type '{' expr_list '}' EOF
     ;
 
 type
-    : (AND | OR)
+    : AND
+    | OR
     ;
 
 expr_list
@@ -25,6 +26,7 @@ label
 opt
     : GE
     | EQ
+    | GT
     ;
 
 threshold

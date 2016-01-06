@@ -1,6 +1,5 @@
-// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5
+// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5.1
 package grammar.generated;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -18,68 +17,68 @@ public class ActivityBaseVisitor<T> extends AbstractParseTreeVisitor<T> implemen
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitMain(@NotNull ActivityParser.MainContext ctx) { return visitChildren(ctx); }
+	@Override public T visitMain(ActivityParser.MainContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitType(@NotNull ActivityParser.TypeContext ctx) { return visitChildren(ctx); }
+	@Override public T visitType(ActivityParser.TypeContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitExpr_list(@NotNull ActivityParser.Expr_listContext ctx) { return visitChildren(ctx); }
+	@Override public T visitExpr_list(ActivityParser.Expr_listContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitExpr(@NotNull ActivityParser.ExprContext ctx) { return visitChildren(ctx); }
+	@Override public T visitExpr(ActivityParser.ExprContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitLabel(@NotNull ActivityParser.LabelContext ctx) { return visitChildren(ctx); }
+	@Override public T visitLabel(ActivityParser.LabelContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitOpt(@NotNull ActivityParser.OptContext ctx) { return visitChildren(ctx); }
+	@Override public T visitOpt(ActivityParser.OptContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitThreshold(@NotNull ActivityParser.ThresholdContext ctx) { return visitChildren(ctx); }
+	@Override public T visitThreshold(ActivityParser.ThresholdContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitResult(@NotNull ActivityParser.ResultContext ctx) { return visitChildren(ctx); }
+	@Override public T visitResult(ActivityParser.ResultContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitSide(@NotNull ActivityParser.SideContext ctx) { return visitChildren(ctx); }
+	@Override public T visitSide(ActivityParser.SideContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitEffect(@NotNull ActivityParser.EffectContext ctx) { return visitChildren(ctx); }
+	@Override public T visitEffect(ActivityParser.EffectContext ctx) { return visitChildren(ctx); }
 }

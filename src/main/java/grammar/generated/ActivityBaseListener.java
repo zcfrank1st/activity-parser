@@ -1,8 +1,7 @@
-// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5
+// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5.1
 package grammar.generated;
 
 import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
@@ -17,144 +16,144 @@ public class ActivityBaseListener implements ActivityListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMain(@NotNull ActivityParser.MainContext ctx) { }
+	@Override public void enterMain(ActivityParser.MainContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMain(@NotNull ActivityParser.MainContext ctx) { }
+	@Override public void exitMain(ActivityParser.MainContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterType(@NotNull ActivityParser.TypeContext ctx) { }
+	@Override public void enterType(ActivityParser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitType(@NotNull ActivityParser.TypeContext ctx) { }
+	@Override public void exitType(ActivityParser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpr_list(@NotNull ActivityParser.Expr_listContext ctx) { }
+	@Override public void enterExpr_list(ActivityParser.Expr_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpr_list(@NotNull ActivityParser.Expr_listContext ctx) { }
+	@Override public void exitExpr_list(ActivityParser.Expr_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpr(@NotNull ActivityParser.ExprContext ctx) { }
+	@Override public void enterExpr(ActivityParser.ExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpr(@NotNull ActivityParser.ExprContext ctx) { }
+	@Override public void exitExpr(ActivityParser.ExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLabel(@NotNull ActivityParser.LabelContext ctx) { }
+	@Override public void enterLabel(ActivityParser.LabelContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLabel(@NotNull ActivityParser.LabelContext ctx) { }
+	@Override public void exitLabel(ActivityParser.LabelContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOpt(@NotNull ActivityParser.OptContext ctx) { }
+	@Override public void enterOpt(ActivityParser.OptContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOpt(@NotNull ActivityParser.OptContext ctx) { }
+	@Override public void exitOpt(ActivityParser.OptContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterThreshold(@NotNull ActivityParser.ThresholdContext ctx) { }
+	@Override public void enterThreshold(ActivityParser.ThresholdContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitThreshold(@NotNull ActivityParser.ThresholdContext ctx) { }
+	@Override public void exitThreshold(ActivityParser.ThresholdContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterResult(@NotNull ActivityParser.ResultContext ctx) { }
+	@Override public void enterResult(ActivityParser.ResultContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitResult(@NotNull ActivityParser.ResultContext ctx) { }
+	@Override public void exitResult(ActivityParser.ResultContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSide(@NotNull ActivityParser.SideContext ctx) { }
+	@Override public void enterSide(ActivityParser.SideContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSide(@NotNull ActivityParser.SideContext ctx) { }
+	@Override public void exitSide(ActivityParser.SideContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEffect(@NotNull ActivityParser.EffectContext ctx) { }
+	@Override public void enterEffect(ActivityParser.EffectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEffect(@NotNull ActivityParser.EffectContext ctx) { }
+	@Override public void exitEffect(ActivityParser.EffectContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { }
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEveryRule(@NotNull ParserRuleContext ctx) { }
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitTerminal(@NotNull TerminalNode node) { }
+	@Override public void visitTerminal(TerminalNode node) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitErrorNode(@NotNull ErrorNode node) { }
+	@Override public void visitErrorNode(ErrorNode node) { }
 }

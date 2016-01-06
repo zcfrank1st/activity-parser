@@ -1,6 +1,5 @@
-// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5
+// Generated from /Users/zcfrank1st/Desktop/git-svn/activity-parser/src/main/java/grammar/Activity.g4 by ANTLR 4.5.1
 package grammar.generated;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -16,59 +15,59 @@ public interface ActivityVisitor<T> extends ParseTreeVisitor<T> {
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitMain(@NotNull ActivityParser.MainContext ctx);
+	T visitMain(ActivityParser.MainContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitType(@NotNull ActivityParser.TypeContext ctx);
+	T visitType(ActivityParser.TypeContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#expr_list}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpr_list(@NotNull ActivityParser.Expr_listContext ctx);
+	T visitExpr_list(ActivityParser.Expr_listContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#expr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpr(@NotNull ActivityParser.ExprContext ctx);
+	T visitExpr(ActivityParser.ExprContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#label}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitLabel(@NotNull ActivityParser.LabelContext ctx);
+	T visitLabel(ActivityParser.LabelContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#opt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitOpt(@NotNull ActivityParser.OptContext ctx);
+	T visitOpt(ActivityParser.OptContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#threshold}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitThreshold(@NotNull ActivityParser.ThresholdContext ctx);
+	T visitThreshold(ActivityParser.ThresholdContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#result}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitResult(@NotNull ActivityParser.ResultContext ctx);
+	T visitResult(ActivityParser.ResultContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#side}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSide(@NotNull ActivityParser.SideContext ctx);
+	T visitSide(ActivityParser.SideContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#effect}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitEffect(@NotNull ActivityParser.EffectContext ctx);
+	T visitEffect(ActivityParser.EffectContext ctx);
 }
