@@ -9,7 +9,7 @@ public class Rule {
     private String label;
     private String opt;
     private String threshold;
-    private String side;
+    private String host;
     private String effect;
 
     private boolean used;
@@ -46,12 +46,12 @@ public class Rule {
         this.threshold = threshold;
     }
 
-    public String getSide() {
-        return side;
+    public String getHost() {
+        return host;
     }
 
-    public void setSide(String side) {
-        this.side = side;
+    public void setHost(String host) {
+        this.host = host;
     }
 
     public String getEffect() {

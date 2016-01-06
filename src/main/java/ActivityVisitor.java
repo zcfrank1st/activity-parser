@@ -37,7 +37,7 @@ public class ActivityVisitor extends ActivityBaseVisitor {
     }
 
     @Override
-    public Object visitSide(ActivityParser.SideContext ctx) {
+    public Object visitHost(ActivityParser.HostContext ctx) {
         combiner(ctx.getText());
         return super.visitChildren(ctx);
     }

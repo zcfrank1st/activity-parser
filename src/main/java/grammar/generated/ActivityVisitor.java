@@ -65,11 +65,11 @@ public interface ActivityVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitResult(ActivityParser.ResultContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ActivityParser#side}.
+	 * Visit a parse tree produced by {@link ActivityParser#host}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSide(ActivityParser.SideContext ctx);
+	T visitHost(ActivityParser.HostContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ActivityParser#effect}.
 	 * @param ctx the parse tree

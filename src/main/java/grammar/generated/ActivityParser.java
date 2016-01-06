@@ -22,11 +22,11 @@ public class ActivityParser extends Parser {
 		MINUS_VALUE=17, LITERALS=18, INT=19, WS=20;
 	public static final int
 		RULE_main = 0, RULE_type = 1, RULE_expr_list = 2, RULE_expr = 3, RULE_name = 4, 
-		RULE_label = 5, RULE_opt = 6, RULE_threshold = 7, RULE_result = 8, RULE_side = 9, 
+		RULE_label = 5, RULE_opt = 6, RULE_threshold = 7, RULE_result = 8, RULE_host = 9, 
 		RULE_effect = 10;
 	public static final String[] ruleNames = {
 		"main", "type", "expr_list", "expr", "name", "label", "opt", "threshold", 
-		"result", "side", "effect"
+		"result", "host", "effect"
 	};
 
 	private static final String[] _LITERAL_NAMES = {
@@ -519,8 +519,8 @@ public class ActivityParser extends Parser {
 	}
 
 	public static class ResultContext extends ParserRuleContext {
-		public SideContext side() {
-			return getRuleContext(SideContext.class,0);
+		public HostContext host() {
+			return getRuleContext(HostContext.class,0);
 		}
 		public EffectContext effect() {
 			return getRuleContext(EffectContext.class,0);
@@ -552,7 +552,7 @@ public class ActivityParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(55);
-			side();
+			host();
 			setState(57);
 			_la = _input.LA(1);
 			if (_la==MINUS_VALUE || _la==INT) {
@@ -575,33 +575,33 @@ public class ActivityParser extends Parser {
 		return _localctx;
 	}
 
-	public static class SideContext extends ParserRuleContext {
+	public static class HostContext extends ParserRuleContext {
 		public TerminalNode ITEM() { return getToken(ActivityParser.ITEM, 0); }
 		public TerminalNode TOTAL_PRICE() { return getToken(ActivityParser.TOTAL_PRICE, 0); }
 		public TerminalNode SINGLE_PRICE() { return getToken(ActivityParser.SINGLE_PRICE, 0); }
 		public TerminalNode EXPRESS() { return getToken(ActivityParser.EXPRESS, 0); }
-		public SideContext(ParserRuleContext parent, int invokingState) {
+		public HostContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_side; }
+		@Override public int getRuleIndex() { return RULE_host; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ActivityListener ) ((ActivityListener)listener).enterSide(this);
+			if ( listener instanceof ActivityListener ) ((ActivityListener)listener).enterHost(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ActivityListener ) ((ActivityListener)listener).exitSide(this);
+			if ( listener instanceof ActivityListener ) ((ActivityListener)listener).exitHost(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ActivityVisitor ) return ((ActivityVisitor<? extends T>)visitor).visitSide(this);
+			if ( visitor instanceof ActivityVisitor ) return ((ActivityVisitor<? extends T>)visitor).visitHost(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
-	public final SideContext side() throws RecognitionException {
-		SideContext _localctx = new SideContext(_ctx, getState());
-		enterRule(_localctx, 18, RULE_side);
+	public final HostContext host() throws RecognitionException {
+		HostContext _localctx = new HostContext(_ctx, getState());
+		enterRule(_localctx, 18, RULE_host);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);

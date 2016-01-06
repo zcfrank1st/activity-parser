@@ -1,19 +1,14 @@
 import bean.Activity;
 import bean.Rule;
-import com.google.common.base.Splitter;
 import com.google.gson.Gson;
-import grammar.generated.ActivityBaseVisitor;
 import grammar.generated.ActivityLexer;
 import grammar.generated.ActivityParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Spliterator;
-import java.util.Spliterators;
 
 /**
  * Created by zcfrank1st on 1/5/16.

@@ -40,10 +40,10 @@ threshold
     ;
 
 result
-    : side effect?
+    : host effect?
     ;
 
-side
+host
     : ITEM
     | TOTAL_PRICE
     | SINGLE_PRICE

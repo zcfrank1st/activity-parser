@@ -124,13 +124,13 @@ public class ActivityBaseListener implements ActivityListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSide(ActivityParser.SideContext ctx) { }
+	@Override public void enterHost(ActivityParser.HostContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSide(ActivityParser.SideContext ctx) { }
+	@Override public void exitHost(ActivityParser.HostContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
