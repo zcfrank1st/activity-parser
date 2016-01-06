@@ -1,8 +1,6 @@
 import bean.Activity;
 import bean.Rule;
-import com.google.gson.Gson;
 import grammar.generated.ActivityBaseListener;
-import grammar.generated.ActivityParser;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.util.ArrayList;
@@ -11,7 +9,7 @@ import java.util.List;
 /**
  * Created by zcfrank1st on 1/5/16.
  */
-public class ActivityProcessor extends ActivityBaseListener {
+public class ActivityListener extends ActivityBaseListener {
     @Override
     public void enterMain(grammar.generated.ActivityParser.MainContext ctx) {
         Activity activity = new Activity();
@@ -34,8 +32,5 @@ public class ActivityProcessor extends ActivityBaseListener {
             rules.add(rule);
         }
         activity.setRules(rules);
-
-        Gson gson = new Gson();
-        System.out.println(gson.toJson(activity));
     }
 }
