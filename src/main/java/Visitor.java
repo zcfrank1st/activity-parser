@@ -4,7 +4,7 @@ import grammar.generated.ActivityParser;
 /**
  * Created by zcfrank1st on 1/6/16.
  */
-public class ActivityVisitor extends ActivityBaseVisitor {
+public class Visitor extends ActivityBaseVisitor {
     private String content = "";
     @Override
     public Object visitType(ActivityParser.TypeContext ctx) {

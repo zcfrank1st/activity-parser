@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by zcfrank1st on 1/5/16.
  */
-public class ActivityListener extends ActivityBaseListener {
+public class Listener extends ActivityBaseListener {
     @Override
     public void enterMain(grammar.generated.ActivityParser.MainContext ctx) {
 //        Activity activity = new Activity();

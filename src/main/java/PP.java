@@ -1,5 +1,6 @@
 import bean.Activity;
 import bean.Rule;
+import com.google.gson.Gson;
 import grammar.generated.ActivityLexer;
 import grammar.generated.ActivityParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * Created by zcfrank1st on 1/5/16.
  */
-public class Parser {
+public class PP {
     public static void main(String[] args) {
 //        String list = "AND { 满五减十 @ QUANTITY >= 5 -> TOTAL_PRICE -10 满五减十 @ QUANTITY >= 10 -> TOTAL_PRICE -10 满五减十 @ TOTAL_PRICE >= 10000 -> ITEM 1,2,4}";
 //
@@ -28,7 +29,7 @@ public class Parser {
 ////
 ////        walker.walk(new ActivityProcessor(), tree);
 //
-//        ActivityVisitor activityVisitor = new ActivityVisitor();
+//        Visitor activityVisitor = new Visitor();
 //        activityVisitor.visit(tree);
 //
 //        String content = activityVisitor.getContent();
@@ -66,10 +67,10 @@ public class Parser {
 
         ParseTree tree = parser.main();
 
-        ActivityVisitor activityVisitor = new ActivityVisitor();
-        activityVisitor.visit(tree);
+        Visitor visitor = new Visitor();
+        visitor.visit(tree);
 
-        String content = activityVisitor.getContent();
+        String content = visitor.getContent();
         String[] parts = content.split("@");
 
         List<Rule> rules = new ArrayList<>();
