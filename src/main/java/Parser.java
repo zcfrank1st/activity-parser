@@ -47,7 +47,7 @@ public class Parser {
             rule.setLabel(parts[i * 6 + 2]);
             rule.setOpt(parts[i * 6 + 3]);
             rule.setThreshold(parts[i * 6 + 4]);
-            rule.setSide(parts[i * 6 + 5]);
+            rule.setHost(parts[i * 6 + 5]);
             rule.setEffect(parts[i * 6 + 6]);
             rules.add(rule);
         }
