@@ -22,6 +22,6 @@ public class Parser {
 
         ParseTreeWalker walker = new ParseTreeWalker();
 
-        walker.walk(new Activity(), tree);
+        walker.walk(new ActivityProcessor(), tree);
     }
 }

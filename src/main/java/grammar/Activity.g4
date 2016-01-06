@@ -1,8 +1,10 @@
 grammar Activity;
 // grammar
 
+//init: main+;
+
 main
-    : type '{' expr_list '}' EOF
+    : type '{' expr_list '}'
     ;
 
 type
