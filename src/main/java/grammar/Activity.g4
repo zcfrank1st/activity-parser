@@ -4,7 +4,7 @@ grammar Activity;
 //init: main+;
 
 main
-    : type '{' expr_list '}'
+    : type '{' expr_list '}' EOF
     ;
 
 type
